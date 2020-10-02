@@ -1,4 +1,4 @@
-package edu.escuelaing.arep;
+package edu.escuelaing.arep.client;
 
 import java.net.MalformedURLException;
 import java.net.URL;

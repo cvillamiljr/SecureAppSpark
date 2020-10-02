@@ -1,6 +1,4 @@
-package edu.escuelaing.arep;
-
-import edu.escuelaing.arep.URLScanner;
+package edu.escuelaing.arep.client;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
