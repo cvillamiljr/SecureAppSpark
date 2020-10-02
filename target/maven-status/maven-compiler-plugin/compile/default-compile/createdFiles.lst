@@ -1,0 +1,6 @@
+edu\escuelaing\arep\client\URLReader.class
+edu\escuelaing\arep\server\model\Ranking.class
+edu\escuelaing\arep\server\model\Jugador.class
+edu\escuelaing\arep\client\SecureSparkServices.class
+edu\escuelaing\arep\client\URLScanner.class
+edu\escuelaing\arep\server\SecurityApp.class
