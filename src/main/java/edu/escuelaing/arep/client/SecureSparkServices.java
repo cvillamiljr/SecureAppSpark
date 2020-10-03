@@ -75,7 +75,7 @@ public class SecureSparkServices
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 5000;
+        return 5002;
     }
 
 }
