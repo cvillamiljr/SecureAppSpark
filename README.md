@@ -10,9 +10,8 @@ Desarrolle una aplicación Web segura con los siguientes requerimientos:
 > Luego de que nuestra aplicacion funcione en una instancia EC2 y usemos esa maquina virtual como una de los computadores que necesitamos para que nuestra aplicación funcione de forma correcta.
 > Procedemos a crear una nueva instancia EC2 para poder subir nuestro cliente que consumira el servicio que está corriendo en la otra instancia EC2.
 > Una vez esto el proceso debe poderse realizar usando la direccion de la maquina EC2 usando conexión segura y por los puertos correspondientes que le asginamos en la creación de nuestra aplicaciíon.
-> Las evidencias se encuentra en el siguiente video: 
+> Las evidencias se encuentra en el video del repositorio
 >
-> ![](DemoAplicacion.mp4) 
 >
 > 
 >
