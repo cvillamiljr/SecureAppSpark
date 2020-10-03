@@ -5,7 +5,6 @@ var app =(function (){
         var  pass = document.getElementById('pass');
         console.log(email+" "+pass);
         if(email !== null && pass !== null){
-            console.log("Haz iniciado sesión");
             sendValues(email.value,pass.value);
         }
         else
@@ -16,7 +15,6 @@ var app =(function (){
         axios.post("/login",
             {user:email,pass: pass})
             .then(res => {
-                console.log(res);
                 answerLogin(res);
             })
             .catch(error => console.log(error));
@@ -35,9 +33,8 @@ var app =(function (){
     };
 
     function getTeamsValues(){
-        axios.get("/getRanking")
+        axios.get("/getData")
             .then(res => {
-                console.log(res);
                 addTable(res);
             })
             .catch(error => console.log(error));
@@ -56,7 +53,7 @@ var app =(function (){
                     "<td>"+team["points"]+"</td>"+
                     "</tr>";
                 $("#table > tbody").append(fila);
-                console.log(fila);
+
             }
         }
     }

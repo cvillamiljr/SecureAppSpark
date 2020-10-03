@@ -35,9 +35,21 @@ public class SecureSparkServices
             return null;
         });
 
+        get("/getData",(req,res) -> getResponse());
         post("/login",(req, res) -> verificarData(new JSONObject(req.body())));
     }
+    private static Object getResponse() throws JSONException {
+        String res = "";
+        JSONObject data = null;
+        try{
+            res += HttpServer.readURL("https://ec2-3-87-197-196.compute-1.amazonaws.com:4567/getRanking");
+            data = new JSONObject(res);
+        }catch (Exception e){
+            data = new JSONObject("Error en la conexión con el Servidor");
+        }
 
+        return data;
+    }
     private static JSONObject verificarData(JSONObject data) throws JSONException {
         JSONObject response = new JSONObject();
         try {
